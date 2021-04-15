@@ -153,3 +153,5 @@ print("Ergebnis als Zahl:",Ergebnis)
 res = "".join(str(Ergebnis))
 result = ''.join(c for c in res if c.isalpha())
 print("Ergebnis: ",result)
+input("press Enter to exit")
+
