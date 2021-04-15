@@ -79,14 +79,6 @@ def rest_div31(m):
 
     return m%31
 Alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","ä","ö","ü","ß"]
-
-def Buchstabe(letter):
-
-
-    if(letter in Alphabet):
-        return True
-    else:
-        return False
 #
 #
 #
@@ -154,4 +146,3 @@ res = "".join(str(Ergebnis))
 result = ''.join(c for c in res if c.isalpha())
 print("Ergebnis: ",result)
 input("press Enter to exit")
-
