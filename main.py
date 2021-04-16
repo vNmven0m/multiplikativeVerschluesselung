@@ -83,11 +83,15 @@ Alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q",
 #
 #
 # EINGABEN:
-u = input("Nachricht:")
-k = input("Schlüssel")
+u = input("Nachricht: ")
+k = input("Schlüssel: ")
 # Nachricht verschlüsseln? 1 Entschlüsseln: 0
-Verschlüsseln = input("Nachricht Ver-(1)oder Entsclüsseln?0 ")
+Verschlüsseln = input("Nachricht Ver-(1)oder Entsclüsseln?(0): ")
 Verschlüsseln= int(Verschlüsseln)
+if Verschlüsseln != 1 and Verschlüsseln != 0:
+    print("Bitte gültigen Wert für Verschlüsseln (1/0) angeben")
+    input("Press Enter to exit")
+    exit()
 #
 #
 #
