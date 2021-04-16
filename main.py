@@ -86,7 +86,7 @@ Alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q",
 u = input("Nachricht: ")
 k = input("Schlüssel: ")
 # Nachricht verschlüsseln? 1 Entschlüsseln: 0
-Verschlüsseln = input("Nachricht Ver-(1)oder Entsclüsseln?(0): ")
+Verschlüsseln = input("Nachricht Ver-(1)oder Entschlüsseln?(0): ")
 Verschlüsseln= int(Verschlüsseln)
 if Verschlüsseln != 1 and Verschlüsseln != 0:
     print("Bitte gültigen Wert für Verschlüsseln (1/0) angeben")
@@ -135,8 +135,7 @@ if Verschlüsseln == 1:
     mlist= [KeyLang[i] * MessageLang[i] for i in range(len(MessageLang))]
 if Verschlüsseln == 0:
     mlist = [invers[i] * MessageLang[i] for i in range(len(MessageLang))]
-if Verschlüsseln != 1 and Verschlüsseln != 0:
-        print("Gültigen Wert für Verschlüsseln eingeben")
+
 #print("Multiplikation",mlist)
 
 Rest = [rest_div31(mlist[x]) for x in range(len(mlist))]
@@ -145,7 +144,7 @@ Alphabet = [" ","a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p",
 res = ""
 Ergebnis = [list(Alphabet[Rest[i]]) for i in range(len(Rest))]
 Ergebnis = Ergebnis[:len(Ergebnis)-Zusätzlich]
-print("Ergebnis als Zahl:",Ergebnis)
+print("Ergebnis als Zahl:",Rest)
 res = "".join(str(Ergebnis))
 result = ''.join(c for c in res if c.isalpha())
 print("Ergebnis: ",result)
